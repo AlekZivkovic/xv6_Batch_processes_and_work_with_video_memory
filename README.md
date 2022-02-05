@@ -60,11 +60,11 @@ User program batch\_test should not take any arguments on the command line. This
 
 <p align="center"> Batch 2 </p>
 
-| id | pred\_id | prog        | argv                                    |
-| 0  | -1       | print\_str | print\_str -s first                      |
-| 1  |  0       | print\_str | print\_str -s second                     |
-| 2  |  0       | print\_str | print\_str -s third -t 200               |
-| 3  | 2         | print\_str | print\_str -s fourth                    |
+<p>| id | pred\_id | prog        | argv                                    | </p>
+</p>| 0  | -1       | print\_str | print\_str -s first                      | </p>
+</p>| 1  |  0       | print\_str | print\_str -s second                     | </p>
+</p>| 2  |  0       | print\_str | print\_str -s third -t 200               | </p>
+</p>| 3  | 2         | print\_str | print\_str -s fourth                    | </p>
 
 ## Video memory in user space
 
