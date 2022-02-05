@@ -52,20 +52,19 @@ User program print\_str takes two arguments on the command line: the time specif
 
 User program batch\_test should not take any arguments on the command line. This program needs to perform two batch, to show that the system is properly implemented. The following two tables list what the two batch to run should look like:
 
-| Batch 1 |
-| --- |
-| id | pred\_id | prog | argv |
-| 0 | -1 | print\_str | &quot;print\_str&quot; &quot;-t&quot; &quot;100&quot; &quot;-s&quot; &quot;first&quot; |
-| 1 | -1 | print\_str | &quot;print\_str&quot; &quot;-t&quot; &quot;200&quot; &quot;-s&quot; &quot;second&quot; |
-| 2 | 1 | print\_str | &quot;print\_str&quot; &quot;-t&quot; &quot;100&quot; &quot;-s&quot; &quot;third&quot; |
+ <p align="center"> Batch 1 </p>
+| id | pred\_id | prog       | argv                                     |
+| 0  | -1       | print\_str | print\_str -t 100 -s first               |
+| 1  | -1       | print\_str | print\_str -t 200 -s second              |
+| 2  |  1       | print\_str | print\_str -t 100 -s third               |
 
-| Batch 2 |
-| --- |
-| id | pred\_id | prog | argv |
-| 0 | -1 | print\_str | &quot;print\_str&quot; &quot;-s&quot; &quot;first&quot; |
-| 1 | 0 | print\_str | &quot;print\_str&quot; &quot;-s&quot; &quot;second&quot; |
-| 2 | 0 | print\_str | &quot;print\_str&quot; &quot;-s&quot; &quot;third&quot; &quot;-t&quot; &quot;200&quot; |
-| 3 | 2 | print\_str | &quot;print\_str&quot; &quot;-s&quot; &quot;fourth&quot; |
+<p align="center"> Batch 2 </p>
+
+| id | pred\_id | prog        | argv                                    |
+| 0  | -1       | print\_str | print\_str -s first                      |
+| 1  |  0       | print\_str | print\_str -s second                     |
+| 2  |  0       | print\_str | print\_str -s third -t 200               |
+| 3  | 2         | print\_str | print\_str -s fourth                    |
 
 ## Video memory in user space
 
@@ -84,17 +83,3 @@ This program displays the specified string in the specified color at the specifi
 
 ##
 
-
-## Bodovanje
-
-Zadatak se boduje na sledeći način:
-
-- Batch poslovi sa prethođenjem **= 8 bodova**
-  - Parcijalni poeni se dodeljuju za greške u implementaciji, kao npr. da bude moguće startovati batch, ali da on nema podršku za prethođenje, i sl.
-- Video memorija u korisničkom prostoru = **8 bodova**
-- Korisnicki programi **= 4 boda**
-  - print\_str = _1 bod_
-  - batch\_test_= 1 bod_
-  - video\_test_= 2 boda_
-
-U slučaju da je neka od stavki implementirana parcijalno, biće dodeljeni parcijalni poeni.
