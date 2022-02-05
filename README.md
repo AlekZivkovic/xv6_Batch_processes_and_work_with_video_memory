@@ -53,10 +53,10 @@ User program print\_str takes two arguments on the command line: the time specif
 User program batch\_test should not take any arguments on the command line. This program needs to perform two batch, to show that the system is properly implemented. The following two tables list what the two batch to run should look like:
 
  <p align="center"> Batch 1 </p>
- <p>id  pred\_id  prog        argv </p>                                      
- 0   -1        print\_str  print\_str -t 100 -s first                
- 1   -1        print\_str  print\_str -t 200 -s second               
- 2    1        print\_str  print\_str -t 100 -s third                
+ <p>| id | pred\_id |  prog      |     argv </p>                                      
+ <p>| 0  | -1       |  print_str | print_str -t 100 -s first </p>                
+ <p>| 1  | -1       |  print_str | print_str -t 200 -s second </p>               
+ <p>| 2  |  1       |  print_str | print_str -t 100 -s third </p>                
 
 <p align="center"> Batch 2 </p>
 
